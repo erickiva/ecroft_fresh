@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -12,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 4), () {
+    Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacementNamed(context, '/onboarding');
     });
   }
@@ -20,28 +21,39 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      backgroundColor: Colors.white, // ✅ White background
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // App Logo
+            // ✅ Logo
             Image.asset(
-              'assets/images/ecroftlogo.png',
-              width: 120,
-              height: 120,
+              'assets/ecroftlogo.png',
+              width: 160,
+              height: 160,
+              fit: BoxFit.contain,
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 20),
 
-            // Shimmer Tagline
+            // ✅ Title
+            const Text(
+              'Welcome to eCroft Fresh',
+              style: TextStyle(
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(221, 3, 213, 13),
+              ),
+            ),
+            const SizedBox(height: 10),
+
+            // ✅ Shimmer tagline
             Shimmer.fromColors(
               baseColor: Colors.green.shade800,
-              highlightColor: Colors.green.shade200,
+              highlightColor: const Color.fromARGB(255, 248, 250, 248),
               child: const Text(
                 'Fresh produce, freshly delivered.',
-                textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 19,
+                  fontSize: 16,
                   fontWeight: FontWeight.w500,
                 ),
               ),
