@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "1035267586405",
+    "project_id": "ecroftfresh",
+    "storage_bucket": "ecroftfresh.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035267586405:android:b78e30b3f9007d2ccec98c",
+        "android_client_info": {
+          "package_name": "com.example.ecroft_fresh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035267586405-a3v91h4932pm4e9ohis5tord6qhlhov6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecroft_fresh",
+            "certificate_hash": "85b74096532fc54b78808867ff4cdbc6f5816c78"
+          }
+        },
+        {
+          "client_id": "1035267586405-rocm7j3p2s43bei5ptprsh85e9hsb031.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO6bKzWQglUjEAbz0OogxTQ7tQN1FJeTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035267586405-rocm7j3p2s43bei5ptprsh85e9hsb031.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1035267586405-emnkf3fhlh9sp0jil069qsm7r75929tj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecroftfreshFinal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035267586405:android:12c212b7cd4621a3cec98c",
+        "android_client_info": {
+          "package_name": "com.example.ecroftfresh_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035267586405-695s5915i4neae0efjvmv0j6nlcjup8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecroftfresh_final",
+            "certificate_hash": "85b74096532fc54b78808867ff4cdbc6f5816c78"
+          }
+        },
+        {
+          "client_id": "1035267586405-rocm7j3p2s43bei5ptprsh85e9hsb031.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO6bKzWQglUjEAbz0OogxTQ7tQN1FJeTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035267586405-rocm7j3p2s43bei5ptprsh85e9hsb031.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1035267586405-emnkf3fhlh9sp0jil069qsm7r75929tj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecroftfreshFinal"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1035267586405:android:c19ad7a3fa745c30cec98c",
+        "android_client_info": {
+          "package_name": "com.example.ecroftfresh_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1035267586405-rocm7j3p2s43bei5ptprsh85e9hsb031.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBO6bKzWQglUjEAbz0OogxTQ7tQN1FJeTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1035267586405-rocm7j3p2s43bei5ptprsh85e9hsb031.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1035267586405-emnkf3fhlh9sp0jil069qsm7r75929tj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecroftfreshFinal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
