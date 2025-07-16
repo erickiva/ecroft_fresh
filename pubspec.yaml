@@ -14,6 +14,9 @@ dependencies:
   shimmer: ^3.0.0
   lottie: ^2.7.0
   pinput: ^3.0.1
+  google_maps_flutter: ^2.6.0
+  geolocator: ^11.0.0
+  geocoding: ^4.0.0
   
   
 
@@ -33,7 +36,7 @@ dependencies:
   
 
   # Optional: geolocation, sign-in, etc.
-  geolocator: ^10.1.0
+  
   google_sign_in: ^6.2.1
 
   # For routing and navigation

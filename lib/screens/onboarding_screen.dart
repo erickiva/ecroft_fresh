@@ -34,7 +34,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     if (_currentIndex < _animations.length - 1) {
       _controller.nextPage(duration: const Duration(milliseconds: 300), curve: Curves.easeInOut);
     } else {
-      Navigator.pushReplacementNamed(context, '/phone_login');
+      Navigator.pushReplacementNamed(context, '/phoneLogin');
     }
   }
 

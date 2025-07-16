@@ -5,8 +5,14 @@ import 'package:pinput/pinput.dart';
 class OtpVerificationScreen extends StatefulWidget {
   final String verificationId;
   final String phoneNumber;
+  final bool isRegistered; // ✅ Receive from arguments
 
-  const OtpVerificationScreen({super.key, required this.verificationId, required this.phoneNumber});
+  const OtpVerificationScreen({
+    super.key,
+    required this.verificationId,
+    required this.phoneNumber,
+    required this.isRegistered,
+  });
 
   @override
   State<OtpVerificationScreen> createState() => _OtpVerificationScreenState();
@@ -27,10 +33,19 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
 
       await FirebaseAuth.instance.signInWithCredential(credential);
 
-      Navigator.pushNamedAndRemoveUntil(context, '/dashboard', (_) => false);
+      // ✅ Redirect based on registration status
+      if (widget.isRegistered) {
+        Navigator.pushReplacementNamed(context, '/dashboard');
+      } else {
+        Navigator.pushReplacementNamed(
+          context,
+          '/signup',
+          arguments: widget.phoneNumber,
+        );
+      }
     } on FirebaseAuthException catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Error: ${e.message}")),
+        SnackBar(content: Text("❌ Error: ${e.message}")),
       );
     } finally {
       setState(() => _isLoading = false);
@@ -50,13 +65,13 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
     );
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Verify OTP')),
+      appBar: AppBar(title: const Text('Verify OTP'), backgroundColor: Colors.green),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("Enter the 6-digit code sent to your phone."),
+            Text("Enter the 6-digit code sent to ${widget.phoneNumber}"),
             const SizedBox(height: 20),
             Pinput(
               controller: _otpController,
